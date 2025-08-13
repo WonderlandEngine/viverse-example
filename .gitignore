@@ -1,0 +1,8 @@
+.autosave
+.editor
+deploy
+lib
+node_modules
+cache/**/js/
+publishLog.txt
+appList.txt
