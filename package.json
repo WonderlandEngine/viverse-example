@@ -1,0 +1,37 @@
+{
+	"name": "viversecli.wlp",
+	"version": "1.0.0",
+	"description": "A template for Viverse projects using Wonderland Engine.",
+	"main": "js/index.js",
+	"type": "module",
+	"module": "js/index.js",
+	"scripts": {
+		"build": "echo \"The 'build' script is run by the editor and should produce your application bundle\"",
+		"build:plugin": "node esbuild-plugins.mjs",
+		"build:plugin:watch": "node esbuild-plugins.mjs --watch"
+	},
+	"keywords": [
+		"wonderland-engine"
+	],
+	"dependencies": {
+		"@gltf-transform/core": "^4.2.1",
+		"@gltf-transform/functions": "^4.2.1",
+		"@wonderlandcloud/client": "^0.2.1",
+		"@wonderlandengine/api": "1.5.0-rc.4",
+		"@wonderlandengine/components": "^1.2.1",
+		"@wonderlandengine/upsdk": "^0.2.2",
+		"@wonderlandengine/upsdk-provider-viverse": "^0.1.1",
+		"gl-matrix": "^3.4.3",
+		"meshoptimizer": "^0.24.0",
+		"pica": "^9.0.1",
+		"wle-stats": "^1.0.3"
+	},
+	"devDependencies": {
+		"@viverse/cli": "^0.9.5-beta.8",
+		"esbuild": "^0.24.2",
+		"typescript": "^5.8.3"
+	},
+	"overrides": {
+		"@wonderlandengine/api": "$@wonderlandengine/api"
+	}
+}

@@ -1,0 +1,5560 @@
+{
+    "objects": {
+        "14": {
+            "name": "Player",
+            "translation": [
+                -2.5,
+                0.0,
+                1.1575535
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.9999998,
+                1.0,
+                0.9999998
+            ],
+            "components": [
+                {
+                    "type": "stats-html",
+                    "stats-html": {
+                        "statsType": "fps"
+                    },
+                    "active": true
+                },
+                {
+                    "type": "simple-example-client",
+                    "simple-example-client": {
+                        "playerObject": "473",
+                        "playerMesh": "10",
+                        "playerMaterial": "22",
+                        "serverHost": "server.wonderland.dev",
+                        "serverPath": "",
+                        "debug": false,
+                        "playerPrototype": "548",
+                        "notificationsObject": "547",
+                        "addons": "235",
+                        "audio": false,
+                        "secure": true,
+                        "skipServerStart": false,
+                        "speakingLight": "561",
+                        "idle": "319",
+                        "run": "392",
+                        "playerObjectVR": "563"
+                    },
+                    "active": true
+                },
+                {
+                    "type": "wasd-controls-custom",
+                    "wasd-controls-custom": {
+                        "nonVrCamera": "17",
+                        "vrCamera": "19",
+                        "lockY": true,
+                        "mobileJoystick": true,
+                        "animRetarget": 227,
+                        "headObject": 144,
+                        "Avatar": "235"
+                    },
+                    "active": true
+                },
+                {
+                    "type": "target-framerate",
+                    "target-framerate": {
+                        "framerate": 72.0
+                    }
+                },
+                {
+                    "type": "fixed-foveation",
+                    "fixed-foveation": {
+                        "fixedFoveation": 1.0
+                    }
+                }
+            ]
+        },
+        "15": {
+            "name": "FloorPlane",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "20"
+                    },
+                    "active": true
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                30.0,
+                                0.1,
+                                30.0
+                            ]
+                        },
+                        "groups": 4
+                    }
+                }
+            ],
+            "translation": [
+                0.0080453,
+                -0.0,
+                0.0
+            ],
+            "rotation": [
+                -0.707251,
+                0.0,
+                0.0,
+                0.7069625
+            ],
+            "scaling": [
+                11.1716537,
+                11.1716508,
+                11.1716508
+            ],
+            "parent": "460"
+        },
+        "17": {
+            "name": "NonVrCamera",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "cursor",
+                    "cursor": {
+                        "collisionGroup": 0,
+                        "handedness": "none"
+                    }
+                },
+                {
+                    "type": "audio-listener"
+                },
+                {
+                    "type": "vr-mode-active-switch",
+                    "vr-mode-active-switch": {
+                        "activateComponents": "in non-VR"
+                    }
+                },
+                {
+                    "type": "orbital-camera",
+                    "orbital-camera": {
+                        "target": "473",
+                        "minZoom": 1.0,
+                        "maxZoom": 5.0,
+                        "zoomSensitivity": 0.2
+                    }
+                }
+            ],
+            "translation": [
+                2.5,
+                -1.75,
+                -1.1575535
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0000002,
+                1.0,
+                1.0000002
+            ]
+        },
+        "18": {
+            "name": "EyeLeft",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye left"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "19": {
+            "name": "EyeRight",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye right"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "23": {
+            "name": "Light.000",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "intensity": 0.5,
+                        "type": "sun",
+                        "shadows": true,
+                        "shadowBias": 0.001,
+                        "shadowNormalBias": 0.0099999,
+                        "shadowRange": 40.0,
+                        "color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                }
+            ],
+            "translation": [
+                -1.0,
+                3.0,
+                -1.0
+            ],
+            "rotation": [
+                0.4423529,
+                -0.0641385,
+                -0.1283613,
+                0.8852872
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "53": {
+            "link": {
+                "name": "root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "130",
+            "name": "ControllerModelLeft",
+            "translation": [
+                -0.0117514,
+                0.0008869,
+                0.0161192
+            ],
+            "rotation": [
+                -0.0,
+                0.7316615,
+                0.6816681,
+                3.196286257889369e-8
+            ],
+            "scaling": [
+                0.9999998,
+                0.9999999,
+                0.9999997
+            ]
+        },
+        "54": {
+            "link": {
+                "name": "controller<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53",
+            "components": [
+                {
+                    "active": true
+                }
+            ]
+        },
+        "55": {
+            "link": {
+                "name": "thumbrest_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "56": {
+            "link": {
+                "name": "thumbrest_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "57": {
+            "link": {
+                "name": "thumbrest_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "58": {
+            "link": {
+                "name": "x_button_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "59": {
+            "link": {
+                "name": "x_button_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "60": {
+            "link": {
+                "name": "x_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "61": {
+            "link": {
+                "name": "x_button<x_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "60"
+        },
+        "62": {
+            "link": {
+                "name": "xr_standard_squeeze_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "63": {
+            "link": {
+                "name": "xr_standard_squeeze_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "64": {
+            "link": {
+                "name": "xr_standard_squeeze_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "65": {
+            "link": {
+                "name": "squeeze<xr_standard_squeeze_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "64"
+        },
+        "66": {
+            "link": {
+                "name": "xr_standard_thumbstick_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "67": {
+            "link": {
+                "name": "xr_standard_thumbstick_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "68": {
+            "link": {
+                "name": "xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "69": {
+            "link": {
+                "name": "xr_standard_thumbstick_xaxis_pressed_max<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "68"
+        },
+        "70": {
+            "link": {
+                "name": "xr_standard_thumbstick_xaxis_pressed_min<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "68"
+        },
+        "71": {
+            "link": {
+                "name": "xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "68"
+        },
+        "72": {
+            "link": {
+                "name": "xr_standard_thumbstick_yaxis_pressed_max<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "71"
+        },
+        "73": {
+            "link": {
+                "name": "xr_standard_thumbstick_yaxis_pressed_min<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "71"
+        },
+        "74": {
+            "link": {
+                "name": "xr_standard_thumbstick_yaxis_pressed_value<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "71"
+        },
+        "75": {
+            "link": {
+                "name": "thumbstick<xr_standard_thumbstick_yaxis_pressed_value<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "74"
+        },
+        "76": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "77": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "78": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "79": {
+            "link": {
+                "name": "trigger<xr_standard_trigger_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "78"
+        },
+        "80": {
+            "link": {
+                "name": "y_button_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "81": {
+            "link": {
+                "name": "y_button_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "82": {
+            "link": {
+                "name": "y_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "53"
+        },
+        "83": {
+            "link": {
+                "name": "y_button<y_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "82"
+        },
+        "95": {
+            "link": {
+                "name": "root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "129",
+            "name": "ControllerModelRight",
+            "translation": [
+                0.0097994,
+                -0.0006203,
+                0.0177838
+            ],
+            "rotation": [
+                -0.0,
+                0.999921,
+                -0.0125658,
+                -4.174509058429976e-7
+            ],
+            "scaling": [
+                0.9993978,
+                0.9993963,
+                1.0000015
+            ]
+        },
+        "96": {
+            "link": {
+                "name": "a_button_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "97": {
+            "link": {
+                "name": "a_button_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "98": {
+            "link": {
+                "name": "a_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "99": {
+            "link": {
+                "name": "a_button<a_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "98"
+        },
+        "100": {
+            "link": {
+                "name": "b_button_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "101": {
+            "link": {
+                "name": "b_button_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "102": {
+            "link": {
+                "name": "b_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "103": {
+            "link": {
+                "name": "b_button<b_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "102"
+        },
+        "104": {
+            "link": {
+                "name": "controller<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95",
+            "components": [
+                {
+                    "active": true
+                }
+            ]
+        },
+        "105": {
+            "link": {
+                "name": "thumbrest_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "106": {
+            "link": {
+                "name": "thumbrest_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "107": {
+            "link": {
+                "name": "thumbrest_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "108": {
+            "link": {
+                "name": "xr_standard_squeeze_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "109": {
+            "link": {
+                "name": "xr_standard_squeeze_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "110": {
+            "link": {
+                "name": "xr_standard_squeeze_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "111": {
+            "link": {
+                "name": "squeeze<xr_standard_squeeze_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "110"
+        },
+        "112": {
+            "link": {
+                "name": "xr_standard_thumbstick_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "113": {
+            "link": {
+                "name": "xr_standard_thumbstick_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "114": {
+            "link": {
+                "name": "xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "115": {
+            "link": {
+                "name": "xr_standard_thumbstick_xaxis_pressed_max<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "114"
+        },
+        "116": {
+            "link": {
+                "name": "xr_standard_thumbstick_xaxis_pressed_min<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "114"
+        },
+        "117": {
+            "link": {
+                "name": "xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "114"
+        },
+        "118": {
+            "link": {
+                "name": "xr_standard_thumbstick_yaxis_pressed_max<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "117"
+        },
+        "119": {
+            "link": {
+                "name": "xr_standard_thumbstick_yaxis_pressed_min<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "117"
+        },
+        "120": {
+            "link": {
+                "name": "xr_standard_thumbstick_yaxis_pressed_value<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "117"
+        },
+        "121": {
+            "link": {
+                "name": "thumbstick<xr_standard_thumbstick_yaxis_pressed_value<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "120"
+        },
+        "122": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "123": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "124": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "95"
+        },
+        "125": {
+            "link": {
+                "name": "trigger<xr_standard_trigger_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "124"
+        },
+        "126": {
+            "name": "CursorLeft",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "cursor",
+                    "cursor": {
+                        "cursorObject": "127",
+                        "collisionGroup": 0,
+                        "cursorRayObject": "209",
+                        "cursorRayScalingAxis": "y"
+                    }
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "ray left"
+                    }
+                },
+                {
+                    "type": "vr-mode-active-switch"
+                },
+                {
+                    "type": "snap-rotate",
+                    "snap-rotate": {
+                        "targetObject": "14"
+                    }
+                }
+            ],
+            "translation": [
+                2.384185791015625e-7,
+                1.1920928955078125e-7,
+                -2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "127": {
+            "name": "3DCursorHitLeft",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "128"
+                    }
+                }
+            ],
+            "parent": null,
+            "translation": [
+                0.0,
+                0.0388117,
+                1.5585094
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.0099999,
+                0.0099999,
+                0.0099999
+            ]
+        },
+        "129": {
+            "name": "ControllerRight",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "hand right"
+                    }
+                },
+                {
+                    "type": "vr-mode-active-switch",
+                    "active": true
+                }
+            ],
+            "translation": [
+                0.1003172,
+                0.0,
+                -2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "130": {
+            "name": "ControllerLeft",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "hand left"
+                    }
+                },
+                {
+                    "type": "vr-mode-active-switch",
+                    "active": true
+                }
+            ],
+            "translation": [
+                -0.1002006,
+                0.0,
+                -2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "134": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "205",
+            "name": "HandLeft",
+            "components": [
+                {
+                    "type": "hand-tracking",
+                    "hand-tracking": {
+                        "handedness": "left",
+                        "handSkin": "133",
+                        "controllerToDeactivate": "130",
+                        "deactivateChildrenWithoutPose": true
+                    }
+                },
+                {
+                    "type": "vr-mode-active-switch",
+                    "active": true
+                }
+            ],
+            "translation": [
+                -0.1002006,
+                0.0,
+                -2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "135": {
+            "link": {
+                "name": "l_handMeshNode<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "components": [
+                {
+                    "active": true,
+                    "mesh": {
+                        "skin": "133"
+                    }
+                }
+            ]
+        },
+        "136": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_max<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "137": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_min<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "138": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_value<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134"
+        },
+        "139": {
+            "link": {
+                "name": "pinky-finger-tip<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "140": {
+            "link": {
+                "name": "pinky-finger-phalanx-distal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "141": {
+            "link": {
+                "name": "pinky-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "142": {
+            "link": {
+                "name": "pinky-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "143": {
+            "link": {
+                "name": "pinky-finger-metacarpal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "144": {
+            "link": {
+                "name": "ring-finger-tip<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "145": {
+            "link": {
+                "name": "ring-finger-phalanx-distal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "146": {
+            "link": {
+                "name": "ring-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "147": {
+            "link": {
+                "name": "ring-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "148": {
+            "link": {
+                "name": "ring-finger-metacarpal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "149": {
+            "link": {
+                "name": "middle-finger-tip<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "150": {
+            "link": {
+                "name": "middle-finger-phalanx-distal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "151": {
+            "link": {
+                "name": "middle-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "152": {
+            "link": {
+                "name": "middle-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "153": {
+            "link": {
+                "name": "middle-finger-metacarpal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "154": {
+            "link": {
+                "name": "index-finger-tip<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "components": [
+                {
+                    "type": "finger-cursor"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.0099999
+                        },
+                        "groups": 2
+                    }
+                }
+            ],
+            "skin": "133"
+        },
+        "155": {
+            "link": {
+                "name": "index-finger-phalanx-distal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "156": {
+            "link": {
+                "name": "index-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "157": {
+            "link": {
+                "name": "index-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "158": {
+            "link": {
+                "name": "index-finger-metacarpal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "159": {
+            "link": {
+                "name": "thumb-tip<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "160": {
+            "link": {
+                "name": "thumb-phalanx-distal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "161": {
+            "link": {
+                "name": "thumb-phalanx-proximal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "162": {
+            "link": {
+                "name": "thumb-metacarpal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "163": {
+            "link": {
+                "name": "wrist<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "skin": "133"
+        },
+        "167": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "205",
+            "name": "HandRight",
+            "components": [
+                {
+                    "type": "hand-tracking",
+                    "hand-tracking": {
+                        "handedness": "right",
+                        "handSkin": "166",
+                        "controllerToDeactivate": "129"
+                    },
+                    "active": true
+                },
+                {
+                    "type": "vr-mode-active-switch",
+                    "active": true
+                }
+            ],
+            "translation": [
+                0.1003172,
+                0.0,
+                -2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "168": {
+            "link": {
+                "name": "r_handMeshNode<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "components": [
+                {
+                    "mesh": {
+                        "skin": "166"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "169": {
+            "link": {
+                "name": "wrist<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "170": {
+            "link": {
+                "name": "thumb-metacarpal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "171": {
+            "link": {
+                "name": "thumb-phalanx-proximal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "172": {
+            "link": {
+                "name": "thumb-phalanx-distal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "173": {
+            "link": {
+                "name": "thumb-tip<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "174": {
+            "link": {
+                "name": "index-finger-metacarpal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "175": {
+            "link": {
+                "name": "index-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "176": {
+            "link": {
+                "name": "index-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "177": {
+            "link": {
+                "name": "index-finger-phalanx-distal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "178": {
+            "link": {
+                "name": "index-finger-tip<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.0099999
+                        },
+                        "groups": 2
+                    }
+                },
+                {
+                    "type": "finger-cursor"
+                }
+            ],
+            "skin": "166"
+        },
+        "179": {
+            "link": {
+                "name": "middle-finger-metacarpal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "180": {
+            "link": {
+                "name": "middle-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "181": {
+            "link": {
+                "name": "middle-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "182": {
+            "link": {
+                "name": "middle-finger-phalanx-distal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "183": {
+            "link": {
+                "name": "middle-finger-tip<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "184": {
+            "link": {
+                "name": "ring-finger-metacarpal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "185": {
+            "link": {
+                "name": "ring-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "186": {
+            "link": {
+                "name": "ring-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "187": {
+            "link": {
+                "name": "ring-finger-phalanx-distal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "188": {
+            "link": {
+                "name": "ring-finger-tip<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "189": {
+            "link": {
+                "name": "pinky-finger-metacarpal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "190": {
+            "link": {
+                "name": "pinky-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "191": {
+            "link": {
+                "name": "pinky-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "192": {
+            "link": {
+                "name": "pinky-finger-phalanx-distal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "193": {
+            "link": {
+                "name": "pinky-finger-tip<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "skin": "166"
+        },
+        "194": {
+            "name": "Panel",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "195",
+                        "material": "202"
+                    }
+                }
+            ],
+            "translation": [
+                -2.4999997,
+                1.6467201,
+                1.1920928955078125e-7
+            ],
+            "rotation": [
+                0.5002117,
+                0.0,
+                0.0,
+                0.8659031
+            ],
+            "scaling": [
+                0.25,
+                0.1249997,
+                0.2499998
+            ]
+        },
+        "196": {
+            "link": {
+                "name": "Cube",
+                "file": "models\\button.glb"
+            },
+            "parent": "197",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "26"
+                    }
+                }
+            ],
+            "name": "ButtonMesh",
+            "translation": [
+                -0.0000094,
+                0.3244419,
+                -0.0000676
+            ],
+            "rotation": [
+                6.000006465001206e-7,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                0.9999989,
+                0.9999989
+            ]
+        },
+        "197": {
+            "name": "Button",
+            "parent": "194",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "box",
+                        "box": {
+                            "extents": [
+                                0.0974999,
+                                0.025,
+                                0.045
+                            ]
+                        },
+                        "groups": 251
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "button",
+                    "button": {
+                        "buttonMeshObject": "196",
+                        "hoverMaterial": "203"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.057682,
+                0.175434
+            ],
+            "rotation": [
+                -0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.4,
+                0.4999999,
+                0.3
+            ]
+        },
+        "198": {
+            "name": "ButtonLabel",
+            "parent": "196",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Thanks!"
+                    }
+                }
+            ],
+            "translation": [
+                -0.0001563,
+                0.1084579,
+                0.0000046
+            ],
+            "rotation": [
+                -0.7068095,
+                0.0,
+                0.0,
+                0.7074038
+            ],
+            "scaling": [
+                2.5,
+                3.7999999,
+                4.8000063
+            ]
+        },
+        "200": {
+            "name": "Title",
+            "parent": "194",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Welcome to\nWonderland",
+                        "material": "201"
+                    }
+                }
+            ],
+            "translation": [
+                -0.0000023,
+                0.1554993,
+                -0.303415
+            ],
+            "rotation": [
+                -0.7068591,
+                0.0,
+                0.0,
+                0.7073543
+            ],
+            "scaling": [
+                1.5,
+                3.0000002,
+                1.5000001
+            ]
+        },
+        "205": {
+            "name": "TrackedSpace",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "player-height"
+                }
+            ],
+            "translation": [
+                0.0,
+                1.75,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "208": {
+            "link": {
+                "name": "TeleportIndicator",
+                "file": "models\\teleport-indicator.glb"
+            },
+            "translation": [
+                0.0,
+                0.0099999,
+                1.3311299
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "209": {
+            "name": "CursorRayLeft",
+            "parent": "126",
+            "translation": [
+                0.0,
+                0.0,
+                2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "210": {
+            "name": "CursorRayMeshLeft",
+            "parent": "209",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "10",
+                        "material": "128"
+                    }
+                }
+            ],
+            "translation": [
+                2.3841928964429826e-7,
+                0.0002447,
+                0.0
+            ],
+            "rotation": [
+                0.707,
+                0.0,
+                0.0,
+                0.7072135
+            ],
+            "scaling": [
+                0.0049998,
+                0.3500002,
+                0.0049999
+            ]
+        },
+        "212": {
+            "name": "CursorRight",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "cursor",
+                    "cursor": {
+                        "cursorObject": "215",
+                        "collisionGroup": 0,
+                        "cursorRayObject": "213",
+                        "cursorRayScalingAxis": "y"
+                    }
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "ray right"
+                    }
+                },
+                {
+                    "type": "teleport",
+                    "teleport": {
+                        "floorGroup": 2,
+                        "camRoot": "14",
+                        "cam": "17",
+                        "teleportIndicatorMeshObject": "208",
+                        "indicatorYOffset": 0.0099999,
+                        "eyeLeft": "18",
+                        "eyeRight": "19"
+                    }
+                },
+                {
+                    "type": "vr-mode-active-switch"
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "213": {
+            "name": "CursorRayRight",
+            "parent": "212",
+            "translation": [
+                0.0,
+                0.0,
+                2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "214": {
+            "name": "CursorRayMeshRight",
+            "parent": "213",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "10",
+                        "material": "128"
+                    }
+                }
+            ],
+            "translation": [
+                2.384185791015625e-7,
+                0.0002447,
+                0.0
+            ],
+            "rotation": [
+                0.7072796,
+                0.0,
+                0.0,
+                0.7069339
+            ],
+            "scaling": [
+                0.0049998,
+                0.3499999,
+                0.0049999
+            ]
+        },
+        "215": {
+            "name": "3DCursorHitRight",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "128"
+                    }
+                }
+            ],
+            "parent": null,
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.0099999,
+                0.0099999,
+                0.0099999
+            ]
+        },
+        "233": {
+            "name": "Head",
+            "parent": "205",
+            "components": [
+                {
+                    "type": "vr-mode-active-switch",
+                    "active": true
+                },
+                {
+                    "type": "audio-listener",
+                    "active": false
+                },
+                {
+                    "type": "input"
+                }
+            ]
+        },
+        "235": {
+            "name": "Avatar",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0000003,
+                1.0,
+                1.0000003
+            ],
+            "components": [
+                {
+                    "type": "AnimationRetarget",
+                    "AnimationRetarget": {
+                        "from": 230,
+                        "to": null,
+                        "idle": "319",
+                        "run": "392",
+                        "toParent": 144,
+                        "remoteAvatars": "234"
+                    },
+                    "active": true
+                }
+            ]
+        },
+        "317": {
+            "name": "Animations",
+            "components": []
+        },
+        "318": {
+            "link": {
+                "name": "Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "389",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.7071068,
+                0.0,
+                0.0,
+                0.7071066
+            ],
+            "scaling": [
+                1.0,
+                0.9999999,
+                0.9999999
+            ]
+        },
+        "319": {
+            "link": {
+                "name": "hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "318",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "animation": {
+                        "preview": true,
+                        "autoplay": true,
+                        "retarget": false,
+                        "skin": null,
+                        "animation": "1",
+                        "rootMotionMode": "script"
+                    },
+                    "active": true
+                }
+            ]
+        },
+        "320": {
+            "link": {
+                "name": "spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "319"
+        },
+        "321": {
+            "link": {
+                "name": "chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "320",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    },
+                    "active": false
+                }
+            ]
+        },
+        "322": {
+            "link": {
+                "name": "upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "321"
+        },
+        "323": {
+            "link": {
+                "name": "neck<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "322"
+        },
+        "324": {
+            "link": {
+                "name": "head<neck<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "323"
+        },
+        "325": {
+            "link": {
+                "name": "leftEye<head<neck<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "324"
+        },
+        "326": {
+            "link": {
+                "name": "leftEye_end<leftEye<head<neck<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "325"
+        },
+        "327": {
+            "link": {
+                "name": "rightEye<head<neck<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "324"
+        },
+        "328": {
+            "link": {
+                "name": "rightEye_end<rightEye<head<neck<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "327"
+        },
+        "329": {
+            "link": {
+                "name": "leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "322"
+        },
+        "330": {
+            "link": {
+                "name": "leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "329"
+        },
+        "331": {
+            "link": {
+                "name": "leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "330"
+        },
+        "332": {
+            "link": {
+                "name": "leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "331"
+        },
+        "333": {
+            "link": {
+                "name": "leftThumbMetacarpal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "332"
+        },
+        "334": {
+            "link": {
+                "name": "leftThumbProximal<leftThumbMetacarpal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "333"
+        },
+        "335": {
+            "link": {
+                "name": "leftThumbDistal<leftThumbProximal<leftThumbMetacarpal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "334"
+        },
+        "336": {
+            "link": {
+                "name": "leftThumbDistal_end<leftThumbDistal<leftThumbProximal<leftThumbMetacarpal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "335"
+        },
+        "337": {
+            "link": {
+                "name": "leftIndexProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "332"
+        },
+        "338": {
+            "link": {
+                "name": "leftIndexIntermediate<leftIndexProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "337"
+        },
+        "339": {
+            "link": {
+                "name": "leftIndexDistal<leftIndexIntermediate<leftIndexProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "338"
+        },
+        "340": {
+            "link": {
+                "name": "leftIndexDistal_end<leftIndexDistal<leftIndexIntermediate<leftIndexProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "339"
+        },
+        "341": {
+            "link": {
+                "name": "leftMiddleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "332"
+        },
+        "342": {
+            "link": {
+                "name": "leftMiddleIntermediate<leftMiddleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "341"
+        },
+        "343": {
+            "link": {
+                "name": "leftMiddleDistal<leftMiddleIntermediate<leftMiddleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "342"
+        },
+        "344": {
+            "link": {
+                "name": "leftMiddleDistal_end<leftMiddleDistal<leftMiddleIntermediate<leftMiddleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "343"
+        },
+        "345": {
+            "link": {
+                "name": "leftRingProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "332"
+        },
+        "346": {
+            "link": {
+                "name": "leftRingIntermediate<leftRingProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "345"
+        },
+        "347": {
+            "link": {
+                "name": "leftRingDistal<leftRingIntermediate<leftRingProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "346"
+        },
+        "348": {
+            "link": {
+                "name": "leftRingDistal_end<leftRingDistal<leftRingIntermediate<leftRingProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "347"
+        },
+        "349": {
+            "link": {
+                "name": "leftLittleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "332"
+        },
+        "350": {
+            "link": {
+                "name": "leftLittleIntermediate<leftLittleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "349"
+        },
+        "351": {
+            "link": {
+                "name": "leftLittleDistal<leftLittleIntermediate<leftLittleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "350"
+        },
+        "352": {
+            "link": {
+                "name": "leftLittleDistal_end<leftLittleDistal<leftLittleIntermediate<leftLittleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "351"
+        },
+        "353": {
+            "link": {
+                "name": "rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "322"
+        },
+        "354": {
+            "link": {
+                "name": "rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "353"
+        },
+        "355": {
+            "link": {
+                "name": "rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "354"
+        },
+        "356": {
+            "link": {
+                "name": "rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "355"
+        },
+        "357": {
+            "link": {
+                "name": "rightThumbMetacarpal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "356"
+        },
+        "358": {
+            "link": {
+                "name": "rightThumbProximal<rightThumbMetacarpal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "357"
+        },
+        "359": {
+            "link": {
+                "name": "rightThumbDistal<rightThumbProximal<rightThumbMetacarpal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "358"
+        },
+        "360": {
+            "link": {
+                "name": "rightThumbDistal_end<rightThumbDistal<rightThumbProximal<rightThumbMetacarpal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "359"
+        },
+        "361": {
+            "link": {
+                "name": "rightIndexProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "356"
+        },
+        "362": {
+            "link": {
+                "name": "rightIndexIntermediate<rightIndexProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "361"
+        },
+        "363": {
+            "link": {
+                "name": "rightIndexDistal<rightIndexIntermediate<rightIndexProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "362"
+        },
+        "364": {
+            "link": {
+                "name": "rightIndexDistal_end<rightIndexDistal<rightIndexIntermediate<rightIndexProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "363"
+        },
+        "365": {
+            "link": {
+                "name": "rightMiddleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "356"
+        },
+        "366": {
+            "link": {
+                "name": "rightMiddleIntermediate<rightMiddleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "365"
+        },
+        "367": {
+            "link": {
+                "name": "rightMiddleDistal<rightMiddleIntermediate<rightMiddleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "366"
+        },
+        "368": {
+            "link": {
+                "name": "rightMiddleDistal_end<rightMiddleDistal<rightMiddleIntermediate<rightMiddleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "367"
+        },
+        "369": {
+            "link": {
+                "name": "rightRingProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "356"
+        },
+        "370": {
+            "link": {
+                "name": "rightRingIntermediate<rightRingProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "369"
+        },
+        "371": {
+            "link": {
+                "name": "rightRingDistal<rightRingIntermediate<rightRingProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "370"
+        },
+        "372": {
+            "link": {
+                "name": "rightRingDistal_end<rightRingDistal<rightRingIntermediate<rightRingProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "371"
+        },
+        "373": {
+            "link": {
+                "name": "rightLittleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "356"
+        },
+        "374": {
+            "link": {
+                "name": "rightLittleIntermediate<rightLittleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "373"
+        },
+        "375": {
+            "link": {
+                "name": "rightLittleDistal<rightLittleIntermediate<rightLittleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "374"
+        },
+        "376": {
+            "link": {
+                "name": "rightLittleDistal_end<rightLittleDistal<rightLittleIntermediate<rightLittleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "375"
+        },
+        "377": {
+            "link": {
+                "name": "leftUpperLeg<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "319"
+        },
+        "378": {
+            "link": {
+                "name": "leftLowerLeg<leftUpperLeg<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "377"
+        },
+        "379": {
+            "link": {
+                "name": "leftFoot<leftLowerLeg<leftUpperLeg<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "378"
+        },
+        "380": {
+            "link": {
+                "name": "leftToes<leftFoot<leftLowerLeg<leftUpperLeg<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "379"
+        },
+        "381": {
+            "link": {
+                "name": "leftToes_end<leftToes<leftFoot<leftLowerLeg<leftUpperLeg<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "380"
+        },
+        "382": {
+            "link": {
+                "name": "rightUpperLeg<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "319"
+        },
+        "383": {
+            "link": {
+                "name": "rightLowerLeg<rightUpperLeg<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "382"
+        },
+        "384": {
+            "link": {
+                "name": "rightFoot<rightLowerLeg<rightUpperLeg<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "383"
+        },
+        "385": {
+            "link": {
+                "name": "rightToes<rightFoot<rightLowerLeg<rightUpperLeg<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "384"
+        },
+        "386": {
+            "link": {
+                "name": "rightToes_end<rightToes<rightFoot<rightLowerLeg<rightUpperLeg<hips<Avatar_Root",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "385"
+        },
+        "387": {
+            "link": {
+                "name": "relaxed",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "389",
+            "translation": [
+                0.3000488,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "388": {
+            "link": {
+                "name": "blink",
+                "file": "static\\Idle.glb"
+            },
+            "parent": "389",
+            "translation": [
+                0.0,
+                0.0,
+                0.125
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "389": {
+            "name": "Idle",
+            "parent": "317",
+            "components": []
+        },
+        "390": {
+            "name": "Run",
+            "parent": "317",
+            "components": []
+        },
+        "391": {
+            "link": {
+                "name": "Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "390"
+        },
+        "392": {
+            "link": {
+                "name": "hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "391",
+            "components": [
+                {
+                    "type": "animation",
+                    "animation": {
+                        "animation": "2",
+                        "preview": true,
+                        "autoplay": true
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        "393": {
+            "link": {
+                "name": "spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "392",
+            "translation": [
+                -0.0282011,
+                -0.0651447,
+                0.6374571
+            ],
+            "rotation": [
+                -0.0070102,
+                0.0038789,
+                -0.1138904,
+                0.993461
+            ],
+            "scaling": [
+                1.0000007,
+                1.0000002,
+                1.0000003
+            ]
+        },
+        "394": {
+            "link": {
+                "name": "chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "393"
+        },
+        "395": {
+            "link": {
+                "name": "upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "394"
+        },
+        "396": {
+            "link": {
+                "name": "neck<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "395"
+        },
+        "397": {
+            "link": {
+                "name": "head<neck<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "396"
+        },
+        "398": {
+            "link": {
+                "name": "leftEye<head<neck<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "397"
+        },
+        "399": {
+            "link": {
+                "name": "leftEye_end<leftEye<head<neck<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "398"
+        },
+        "400": {
+            "link": {
+                "name": "rightEye<head<neck<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "397"
+        },
+        "401": {
+            "link": {
+                "name": "rightEye_end<rightEye<head<neck<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "400"
+        },
+        "402": {
+            "link": {
+                "name": "leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "395"
+        },
+        "403": {
+            "link": {
+                "name": "leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "402"
+        },
+        "404": {
+            "link": {
+                "name": "leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "403"
+        },
+        "405": {
+            "link": {
+                "name": "leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "404"
+        },
+        "406": {
+            "link": {
+                "name": "leftThumbMetacarpal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "405"
+        },
+        "407": {
+            "link": {
+                "name": "leftThumbProximal<leftThumbMetacarpal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "406"
+        },
+        "408": {
+            "link": {
+                "name": "leftThumbDistal<leftThumbProximal<leftThumbMetacarpal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "407"
+        },
+        "409": {
+            "link": {
+                "name": "leftThumbDistal_end<leftThumbDistal<leftThumbProximal<leftThumbMetacarpal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "408"
+        },
+        "410": {
+            "link": {
+                "name": "leftIndexProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "405"
+        },
+        "411": {
+            "link": {
+                "name": "leftIndexIntermediate<leftIndexProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "410"
+        },
+        "412": {
+            "link": {
+                "name": "leftIndexDistal<leftIndexIntermediate<leftIndexProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "411"
+        },
+        "413": {
+            "link": {
+                "name": "leftIndexDistal_end<leftIndexDistal<leftIndexIntermediate<leftIndexProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "412"
+        },
+        "414": {
+            "link": {
+                "name": "leftMiddleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "405"
+        },
+        "415": {
+            "link": {
+                "name": "leftMiddleIntermediate<leftMiddleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "414"
+        },
+        "416": {
+            "link": {
+                "name": "leftMiddleDistal<leftMiddleIntermediate<leftMiddleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "415"
+        },
+        "417": {
+            "link": {
+                "name": "leftMiddleDistal_end<leftMiddleDistal<leftMiddleIntermediate<leftMiddleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "416"
+        },
+        "418": {
+            "link": {
+                "name": "leftRingProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "405"
+        },
+        "419": {
+            "link": {
+                "name": "leftRingIntermediate<leftRingProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "418"
+        },
+        "420": {
+            "link": {
+                "name": "leftRingDistal<leftRingIntermediate<leftRingProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "419"
+        },
+        "421": {
+            "link": {
+                "name": "leftRingDistal_end<leftRingDistal<leftRingIntermediate<leftRingProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "420"
+        },
+        "422": {
+            "link": {
+                "name": "leftLittleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "405"
+        },
+        "423": {
+            "link": {
+                "name": "leftLittleIntermediate<leftLittleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "422"
+        },
+        "424": {
+            "link": {
+                "name": "leftLittleDistal<leftLittleIntermediate<leftLittleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "423"
+        },
+        "425": {
+            "link": {
+                "name": "leftLittleDistal_end<leftLittleDistal<leftLittleIntermediate<leftLittleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "424"
+        },
+        "426": {
+            "link": {
+                "name": "rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "395"
+        },
+        "427": {
+            "link": {
+                "name": "rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "426"
+        },
+        "428": {
+            "link": {
+                "name": "rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "427"
+        },
+        "429": {
+            "link": {
+                "name": "rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "428"
+        },
+        "430": {
+            "link": {
+                "name": "rightThumbMetacarpal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "429"
+        },
+        "431": {
+            "link": {
+                "name": "rightThumbProximal<rightThumbMetacarpal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "430"
+        },
+        "432": {
+            "link": {
+                "name": "rightThumbDistal<rightThumbProximal<rightThumbMetacarpal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "431"
+        },
+        "433": {
+            "link": {
+                "name": "rightThumbDistal_end<rightThumbDistal<rightThumbProximal<rightThumbMetacarpal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "432"
+        },
+        "434": {
+            "link": {
+                "name": "rightIndexProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "429"
+        },
+        "435": {
+            "link": {
+                "name": "rightIndexIntermediate<rightIndexProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "434"
+        },
+        "436": {
+            "link": {
+                "name": "rightIndexDistal<rightIndexIntermediate<rightIndexProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "435"
+        },
+        "437": {
+            "link": {
+                "name": "rightIndexDistal_end<rightIndexDistal<rightIndexIntermediate<rightIndexProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "436"
+        },
+        "438": {
+            "link": {
+                "name": "rightMiddleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "429"
+        },
+        "439": {
+            "link": {
+                "name": "rightMiddleIntermediate<rightMiddleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "438"
+        },
+        "440": {
+            "link": {
+                "name": "rightMiddleDistal<rightMiddleIntermediate<rightMiddleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "439"
+        },
+        "441": {
+            "link": {
+                "name": "rightMiddleDistal_end<rightMiddleDistal<rightMiddleIntermediate<rightMiddleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "440"
+        },
+        "442": {
+            "link": {
+                "name": "rightRingProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "429"
+        },
+        "443": {
+            "link": {
+                "name": "rightRingIntermediate<rightRingProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "442"
+        },
+        "444": {
+            "link": {
+                "name": "rightRingDistal<rightRingIntermediate<rightRingProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "443"
+        },
+        "445": {
+            "link": {
+                "name": "rightRingDistal_end<rightRingDistal<rightRingIntermediate<rightRingProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "444"
+        },
+        "446": {
+            "link": {
+                "name": "rightLittleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "429"
+        },
+        "447": {
+            "link": {
+                "name": "rightLittleIntermediate<rightLittleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "446"
+        },
+        "448": {
+            "link": {
+                "name": "rightLittleDistal<rightLittleIntermediate<rightLittleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "447"
+        },
+        "449": {
+            "link": {
+                "name": "rightLittleDistal_end<rightLittleDistal<rightLittleIntermediate<rightLittleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "448"
+        },
+        "450": {
+            "link": {
+                "name": "leftUpperLeg<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "392",
+            "translation": [
+                -0.0805516,
+                -0.063982,
+                0.7176408
+            ],
+            "rotation": [
+                0.3388087,
+                -0.0553101,
+                -0.1853481,
+                0.9207581
+            ],
+            "scaling": [
+                1.0000001,
+                1.0000003,
+                0.9999999
+            ]
+        },
+        "451": {
+            "link": {
+                "name": "leftLowerLeg<leftUpperLeg<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "450"
+        },
+        "452": {
+            "link": {
+                "name": "leftFoot<leftLowerLeg<leftUpperLeg<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "451"
+        },
+        "453": {
+            "link": {
+                "name": "leftToes<leftFoot<leftLowerLeg<leftUpperLeg<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "452"
+        },
+        "454": {
+            "link": {
+                "name": "leftToes_end<leftToes<leftFoot<leftLowerLeg<leftUpperLeg<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "453"
+        },
+        "455": {
+            "link": {
+                "name": "rightUpperLeg<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "392",
+            "translation": [
+                0.0237414,
+                -0.083907,
+                0.7156955
+            ],
+            "rotation": [
+                -0.0536408,
+                -0.0047881,
+                -0.1650177,
+                0.9848192
+            ],
+            "scaling": [
+                0.9999999,
+                1.0000001,
+                1.0
+            ]
+        },
+        "456": {
+            "link": {
+                "name": "rightLowerLeg<rightUpperLeg<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "455"
+        },
+        "457": {
+            "link": {
+                "name": "rightFoot<rightLowerLeg<rightUpperLeg<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "456"
+        },
+        "458": {
+            "link": {
+                "name": "rightToes<rightFoot<rightLowerLeg<rightUpperLeg<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "457"
+        },
+        "459": {
+            "link": {
+                "name": "rightToes_end<rightToes<rightFoot<rightLowerLeg<rightUpperLeg<hips<Avatar_Root",
+                "file": "static\\Run.glb"
+            },
+            "parent": "458"
+        },
+        "460": {
+            "name": "Env",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                2.7620472,
+                2.7620472,
+                2.7620472
+            ]
+        },
+        "461": {
+            "name": "Rock",
+            "parent": "474",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "20"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -10.0216808
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                5.2883996,
+                5.2883996,
+                5.2883996
+            ]
+        },
+        "462": {
+            "name": "Rock",
+            "parent": "474",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "20"
+                    }
+                }
+            ],
+            "translation": [
+                -6.6660113,
+                0.0,
+                -10.0216808
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                5.2883996,
+                5.2883996,
+                5.2883996
+            ]
+        },
+        "463": {
+            "name": "Rock",
+            "parent": "474",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "20"
+                    }
+                }
+            ],
+            "translation": [
+                3.9517488,
+                0.0,
+                -10.0216808
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                4.1778359,
+                4.1778359,
+                4.1778359
+            ]
+        },
+        "464": {
+            "name": "Rock",
+            "parent": "474",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "20"
+                    }
+                }
+            ],
+            "translation": [
+                11.25284,
+                0.0,
+                -4.521162
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                6.8934292,
+                6.8934292,
+                6.8934292
+            ]
+        },
+        "465": {
+            "name": "Rock",
+            "parent": "474",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "20"
+                    }
+                }
+            ],
+            "translation": [
+                4.9295516,
+                0.0,
+                14.3484859
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                6.8934292,
+                6.8934292,
+                6.8934292
+            ]
+        },
+        "466": {
+            "name": "Rock",
+            "parent": "474",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "20"
+                    }
+                }
+            ],
+            "translation": [
+                11.25284,
+                0.0,
+                6.5426521
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                6.8934292,
+                6.8934292,
+                6.8934292
+            ]
+        },
+        "467": {
+            "name": "Rock",
+            "parent": "474",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "20"
+                    }
+                }
+            ],
+            "translation": [
+                -5.4234924,
+                0.0,
+                14.3484859
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                4.6875324,
+                4.6875324,
+                4.6875324
+            ]
+        },
+        "468": {
+            "name": "Rock",
+            "parent": "474",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "20"
+                    }
+                }
+            ],
+            "translation": [
+                -13.6450872,
+                0.0,
+                6.589013
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                7.5469274,
+                7.5469274,
+                7.5469274
+            ]
+        },
+        "469": {
+            "name": "Rock",
+            "parent": "474",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "20"
+                    }
+                }
+            ],
+            "translation": [
+                -13.6450872,
+                0.0,
+                -3.8859071
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                7.5469274,
+                7.5469274,
+                7.5469274
+            ]
+        },
+        "470": {
+            "name": "Testavatar",
+            "parent": "234",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "471": {
+            "name": "VrmDynamic",
+            "parent": "235",
+            "components": [
+                {
+                    "type": "viverse-provider-component",
+                    "viverse-provider-component": {
+                        "nonVrCamera": 3,
+                        "vrCamera": 5,
+                        "remoteAvatars": "234",
+                        "debug": false,
+                        "applicationId": "",
+                        "textureCompressionFactor": 4.0,
+                        "cloneTotal": 0,
+                        "meshCompressionRatio": 0.0,
+                        "localhostDebug": true,
+                        "debugOnLocalhost": true
+                    },
+                    "active": true
+                },
+                {
+                    "type": "vrmLoader",
+                    "vrmLoader": {
+                        "url": "https://avatar.viverse.com/api/meetingareaselector/v2/newgenavatar/avatars/966f70d85b5824534333bc980bb56fab3c75ee09a1b151cd3a116d2115e7b0518797/files?filetype=model&lod=original",
+                        "parentObject": "471"
+                    },
+                    "active": false
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "234": {
+            "name": "RemoteAvatars",
+            "translation": [
+                0.0,
+                -2.5,
+                30.8638648
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "473": {
+            "name": "CamTargetNonVR",
+            "parent": "235",
+            "translation": [
+                0.0,
+                1.4307775,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "474": {
+            "name": "RockGroup",
+            "parent": "460"
+        },
+        "475": {
+            "name": "Walk",
+            "parent": "317"
+        },
+        "476": {
+            "link": {
+                "name": "Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "475"
+        },
+        "477": {
+            "link": {
+                "name": "hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "476",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "animation": {
+                        "preview": true,
+                        "autoplay": true,
+                        "retarget": false,
+                        "animation": "3"
+                    }
+                }
+            ]
+        },
+        "478": {
+            "link": {
+                "name": "spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "477",
+            "translation": [
+                -5.6112185120582594e-8,
+                2.7474015951156616e-8,
+                -0.1589999
+            ],
+            "rotation": [
+                -0.051952,
+                -0.0262095,
+                0.004631,
+                0.9982948
+            ],
+            "scaling": [
+                0.9999998,
+                0.9999998,
+                0.9999997
+            ]
+        },
+        "479": {
+            "link": {
+                "name": "chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "478"
+        },
+        "480": {
+            "link": {
+                "name": "upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "479"
+        },
+        "481": {
+            "link": {
+                "name": "neck<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "480"
+        },
+        "482": {
+            "link": {
+                "name": "head<neck<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "481"
+        },
+        "483": {
+            "link": {
+                "name": "leftEye<head<neck<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "482"
+        },
+        "484": {
+            "link": {
+                "name": "leftEye_end<leftEye<head<neck<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "483"
+        },
+        "485": {
+            "link": {
+                "name": "rightEye<head<neck<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "482"
+        },
+        "486": {
+            "link": {
+                "name": "rightEye_end<rightEye<head<neck<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "485"
+        },
+        "487": {
+            "link": {
+                "name": "leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "480"
+        },
+        "488": {
+            "link": {
+                "name": "leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "487"
+        },
+        "489": {
+            "link": {
+                "name": "leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "488"
+        },
+        "490": {
+            "link": {
+                "name": "leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "489"
+        },
+        "491": {
+            "link": {
+                "name": "leftThumbMetacarpal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "490"
+        },
+        "492": {
+            "link": {
+                "name": "leftThumbProximal<leftThumbMetacarpal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "491"
+        },
+        "493": {
+            "link": {
+                "name": "leftThumbDistal<leftThumbProximal<leftThumbMetacarpal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "492"
+        },
+        "494": {
+            "link": {
+                "name": "leftThumbDistal_end<leftThumbDistal<leftThumbProximal<leftThumbMetacarpal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "493"
+        },
+        "495": {
+            "link": {
+                "name": "leftIndexProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "490"
+        },
+        "496": {
+            "link": {
+                "name": "leftIndexIntermediate<leftIndexProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "495"
+        },
+        "497": {
+            "link": {
+                "name": "leftIndexDistal<leftIndexIntermediate<leftIndexProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "496"
+        },
+        "498": {
+            "link": {
+                "name": "leftIndexDistal_end<leftIndexDistal<leftIndexIntermediate<leftIndexProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "497"
+        },
+        "499": {
+            "link": {
+                "name": "leftMiddleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "490"
+        },
+        "500": {
+            "link": {
+                "name": "leftMiddleIntermediate<leftMiddleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "499"
+        },
+        "501": {
+            "link": {
+                "name": "leftMiddleDistal<leftMiddleIntermediate<leftMiddleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "500"
+        },
+        "502": {
+            "link": {
+                "name": "leftMiddleDistal_end<leftMiddleDistal<leftMiddleIntermediate<leftMiddleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "501"
+        },
+        "503": {
+            "link": {
+                "name": "leftRingProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "490"
+        },
+        "504": {
+            "link": {
+                "name": "leftRingIntermediate<leftRingProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "503"
+        },
+        "505": {
+            "link": {
+                "name": "leftRingDistal<leftRingIntermediate<leftRingProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "504"
+        },
+        "506": {
+            "link": {
+                "name": "leftRingDistal_end<leftRingDistal<leftRingIntermediate<leftRingProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "505"
+        },
+        "507": {
+            "link": {
+                "name": "leftLittleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "490"
+        },
+        "508": {
+            "link": {
+                "name": "leftLittleIntermediate<leftLittleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "507"
+        },
+        "509": {
+            "link": {
+                "name": "leftLittleDistal<leftLittleIntermediate<leftLittleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "508"
+        },
+        "510": {
+            "link": {
+                "name": "leftLittleDistal_end<leftLittleDistal<leftLittleIntermediate<leftLittleProximal<leftHand<leftLowerArm<leftUpperArm<leftShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "509"
+        },
+        "511": {
+            "link": {
+                "name": "rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "480"
+        },
+        "512": {
+            "link": {
+                "name": "rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "511"
+        },
+        "513": {
+            "link": {
+                "name": "rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "512"
+        },
+        "514": {
+            "link": {
+                "name": "rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "513"
+        },
+        "515": {
+            "link": {
+                "name": "rightThumbMetacarpal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "514"
+        },
+        "516": {
+            "link": {
+                "name": "rightThumbProximal<rightThumbMetacarpal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "515"
+        },
+        "517": {
+            "link": {
+                "name": "rightThumbDistal<rightThumbProximal<rightThumbMetacarpal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "516"
+        },
+        "518": {
+            "link": {
+                "name": "rightThumbDistal_end<rightThumbDistal<rightThumbProximal<rightThumbMetacarpal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "517"
+        },
+        "519": {
+            "link": {
+                "name": "rightIndexProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "514"
+        },
+        "520": {
+            "link": {
+                "name": "rightIndexIntermediate<rightIndexProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "519"
+        },
+        "521": {
+            "link": {
+                "name": "rightIndexDistal<rightIndexIntermediate<rightIndexProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "520"
+        },
+        "522": {
+            "link": {
+                "name": "rightIndexDistal_end<rightIndexDistal<rightIndexIntermediate<rightIndexProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "521"
+        },
+        "523": {
+            "link": {
+                "name": "rightMiddleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "514"
+        },
+        "524": {
+            "link": {
+                "name": "rightMiddleIntermediate<rightMiddleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "523"
+        },
+        "525": {
+            "link": {
+                "name": "rightMiddleDistal<rightMiddleIntermediate<rightMiddleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "524"
+        },
+        "526": {
+            "link": {
+                "name": "rightMiddleDistal_end<rightMiddleDistal<rightMiddleIntermediate<rightMiddleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "525"
+        },
+        "527": {
+            "link": {
+                "name": "rightRingProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "514"
+        },
+        "528": {
+            "link": {
+                "name": "rightRingIntermediate<rightRingProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "527"
+        },
+        "529": {
+            "link": {
+                "name": "rightRingDistal<rightRingIntermediate<rightRingProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "528"
+        },
+        "530": {
+            "link": {
+                "name": "rightRingDistal_end<rightRingDistal<rightRingIntermediate<rightRingProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "529"
+        },
+        "531": {
+            "link": {
+                "name": "rightLittleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "514"
+        },
+        "532": {
+            "link": {
+                "name": "rightLittleIntermediate<rightLittleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "531"
+        },
+        "533": {
+            "link": {
+                "name": "rightLittleDistal<rightLittleIntermediate<rightLittleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "532"
+        },
+        "534": {
+            "link": {
+                "name": "rightLittleDistal_end<rightLittleDistal<rightLittleIntermediate<rightLittleProximal<rightHand<rightLowerArm<rightUpperArm<rightShoulder<upperChest<chest<spine<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "533"
+        },
+        "535": {
+            "link": {
+                "name": "leftUpperLeg<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "477",
+            "translation": [
+                -0.0529995,
+                -2.9802322387695313e-8,
+                -0.8
+            ],
+            "rotation": [
+                0.1665537,
+                -0.0060751,
+                0.0190976,
+                0.9858286
+            ],
+            "scaling": [
+                0.9999998,
+                0.9999998,
+                0.9999997
+            ]
+        },
+        "536": {
+            "link": {
+                "name": "leftLowerLeg<leftUpperLeg<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "535"
+        },
+        "537": {
+            "link": {
+                "name": "leftFoot<leftLowerLeg<leftUpperLeg<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "536"
+        },
+        "538": {
+            "link": {
+                "name": "leftToes<leftFoot<leftLowerLeg<leftUpperLeg<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "537"
+        },
+        "539": {
+            "link": {
+                "name": "leftToes_end<leftToes<leftFoot<leftLowerLeg<leftUpperLeg<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "538"
+        },
+        "540": {
+            "link": {
+                "name": "rightUpperLeg<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "477",
+            "translation": [
+                0.0529999,
+                -7.450580596923828e-8,
+                -0.7999944
+            ],
+            "rotation": [
+                0.0366907,
+                -0.0370433,
+                0.0614635,
+                0.9967465
+            ],
+            "scaling": [
+                1.0,
+                0.9999998,
+                0.9999998
+            ]
+        },
+        "541": {
+            "link": {
+                "name": "rightLowerLeg<rightUpperLeg<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "540"
+        },
+        "542": {
+            "link": {
+                "name": "rightFoot<rightLowerLeg<rightUpperLeg<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "541"
+        },
+        "543": {
+            "link": {
+                "name": "rightToes<rightFoot<rightLowerLeg<rightUpperLeg<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "542"
+        },
+        "544": {
+            "link": {
+                "name": "rightToes_end<rightToes<rightFoot<rightLowerLeg<rightUpperLeg<hips<Avatar_Root",
+                "file": "static\\walk.glb"
+            },
+            "parent": "543"
+        },
+        "545": {
+            "link": {
+                "name": "relaxed",
+                "file": "static\\walk.glb"
+            },
+            "parent": "475"
+        },
+        "546": {
+            "link": {
+                "name": "blink",
+                "file": "static\\walk.glb"
+            },
+            "parent": "475"
+        },
+        "547": {
+            "name": "Notification",
+            "components": [
+                {
+                    "type": "text"
+                }
+            ],
+            "translation": [
+                0.0,
+                0.9105157,
+                30.8638648
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                5.17,
+                5.17,
+                5.170001
+            ]
+        },
+        "548": {
+            "name": "PlayerPrototype",
+            "translation": [
+                0.0,
+                -1.2538895,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.9999988,
+                1.0,
+                0.9999988
+            ]
+        },
+        "549": {
+            "name": "Head",
+            "parent": "558",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "10",
+                        "material": "20"
+                    },
+                    "active": false
+                }
+            ],
+            "translation": [
+                0.0,
+                1.7,
+                0.0
+            ],
+            "rotation": [
+                -0.7071068,
+                4.222916416551925e-8,
+                4.222916061280557e-8,
+                0.7071067
+            ],
+            "scaling": [
+                0.4699997,
+                0.4699993,
+                0.4699988
+            ]
+        },
+        "550": {
+            "name": "Body",
+            "parent": "558",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "22"
+                    },
+                    "active": false
+                }
+            ],
+            "translation": [
+                0.0,
+                0.8344891,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.4399999,
+                0.4399999,
+                0.4399999
+            ]
+        },
+        "551": {
+            "name": "RightHand",
+            "parent": "558",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "25"
+                    },
+                    "active": false
+                }
+            ],
+            "translation": [
+                0.9780021,
+                0.8344891,
+                -0.1233454
+            ],
+            "rotation": [
+                0.0,
+                1.2665996962368808e-7,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.2639999,
+                0.2639999,
+                0.2639999
+            ]
+        },
+        "552": {
+            "name": "LeftHand",
+            "parent": "558",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "26"
+                    },
+                    "active": false
+                }
+            ],
+            "translation": [
+                -0.7821548,
+                0.8344892,
+                -0.0936245
+            ],
+            "rotation": [
+                0.0,
+                2.7194582230549713e-7,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.2507999,
+                0.2507999,
+                0.2507999
+            ]
+        },
+        "553": {
+            "name": "Username",
+            "parent": "558",
+            "components": [
+                {
+                    "type": "text"
+                }
+            ],
+            "translation": [
+                0.0,
+                2.6617629,
+                0.0
+            ],
+            "rotation": [
+                -7.549790126404332e-8,
+                1.0,
+                -7.549790126404332e-8,
+                0.0
+            ],
+            "scaling": [
+                0.9999997,
+                1.0,
+                0.9999997
+            ]
+        },
+        "558": {
+            "name": "Offset",
+            "parent": "548",
+            "translation": [
+                0.0,
+                -1.7,
+                -0.0003719
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0000001,
+                1.0,
+                1.0000001
+            ]
+        },
+        "560": {
+            "name": "src",
+            "parent": "17",
+            "translation": [
+                0.0,
+                0.0,
+                -1.788756
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "559": {
+            "name": "Mesh",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "22"
+                    },
+                    "active": false
+                },
+                {
+                    "type": "copy-transform",
+                    "copy-transform": {
+                        "src": "560"
+                    },
+                    "active": false
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.136359,
+                0.136359,
+                0.136359
+            ]
+        },
+        "561": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "type": "point",
+                        "intensity": 0.0
+                    }
+                }
+            ]
+        },
+        "562": {
+            "name": "Foot",
+            "parent": "558",
+            "translation": [
+                0.0,
+                0.2674198,
+                0.0002193
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0000008,
+                1.0,
+                1.0000008
+            ]
+        },
+        "563": {
+            "name": "camTargetVR",
+            "parent": null,
+            "components": [
+                {
+                    "type": "copy-y-rotation",
+                    "copy-y-rotation": {
+                        "src": "18",
+                        "angleSnap": 0.1,
+                        "followSpeed": 10.0
+                    }
+                },
+                {
+                    "type": "copy-transform",
+                    "copy-transform": {
+                        "src": "18",
+                        "height": 0.0
+                    }
+                }
+            ],
+            "translation": [
+                -2.5,
+                1.675986,
+                1.1575633
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0000002,
+                1.0,
+                1.0000002
+            ]
+        },
+        "564": {
+            "name": "Mesh.000",
+            "parent": "563",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "10",
+                        "material": "25"
+                    },
+                    "active": false
+                }
+            ],
+            "translation": [
+                0.0,
+                9.12749413828351e-8,
+                6.143261543911649e-8
+            ],
+            "rotation": [
+                0.7071068,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                0.55,
+                0.5499998,
+                0.5499998
+            ]
+        }
+    },
+    "meshes": {
+        "7": {
+            "link": {
+                "name": "PrimitivePlane",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "PrimitiveCube",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "PrimitiveSphere",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "PrimitiveCone",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "PrimitiveCylinder",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "PrimitiveCircle",
+                "file": "default"
+            }
+        },
+        "47": {
+            "link": {
+                "name": "controller_plyShape",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "48": {
+            "link": {
+                "name": "controller_plyShape.003",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "49": {
+            "link": {
+                "name": "controller_plyShape.005",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "50": {
+            "link": {
+                "name": "controller_plyShape.006",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "51": {
+            "link": {
+                "name": "controller_plyShape.004",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "52": {
+            "link": {
+                "name": "controller_plyShape.002",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "89": {
+            "link": {
+                "name": "controller_plyShape.004",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "90": {
+            "link": {
+                "name": "controller_plyShape.005",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "91": {
+            "link": {
+                "name": "controller_plyShape",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "92": {
+            "link": {
+                "name": "controller_plyShape.002",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "93": {
+            "link": {
+                "name": "controller_plyShape.003",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "94": {
+            "link": {
+                "name": "controller_plyShape.001",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "132": {
+            "link": {
+                "name": "Mesh",
+                "file": "models\\hand-left.glb"
+            },
+            "name": "HandLeft"
+        },
+        "165": {
+            "link": {
+                "name": "Mesh.001",
+                "file": "models\\hand-right.glb"
+            },
+            "name": "HandRight"
+        },
+        "195": {
+            "link": {
+                "name": "Cube.001",
+                "file": "models\\button.glb"
+            },
+            "name": "Button"
+        },
+        "207": {
+            "link": {
+                "name": "TeleportIndicator",
+                "file": "models\\teleport-indicator.glb"
+            }
+        }
+    },
+    "textures": {
+        "44": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "45": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "86": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "87": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        }
+    },
+    "images": {
+        "42": {
+            "link": {
+                "name": "Image_0",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "maxSize": [
+                1024,
+                1024
+            ]
+        },
+        "43": {
+            "link": {
+                "name": "Image_1",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "maxSize": [
+                256,
+                256
+            ]
+        },
+        "84": {
+            "link": {
+                "name": "Image_0",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "maxSize": [
+                1024,
+                1024
+            ]
+        },
+        "85": {
+            "link": {
+                "name": "Image_1",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "maxSize": [
+                256,
+                256
+            ]
+        }
+    },
+    "materials": {
+        "DefaultFontMaterial": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            },
+            "Text": {
+                "effectColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "font": "230"
+            }
+        },
+        "20": {
+            "name": "White",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.99993744699168e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 1,
+                "fogColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    0.2078431
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "diffuseTexture": "45"
+            },
+            "pipeline": "222",
+            "Physical": {
+                "fogColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    0.1137254
+                ],
+                "roughnessFactor": 0.6,
+                "metallicFactor": 0.6
+            }
+        },
+        "22": {
+            "name": "Pink",
+            "Phong": {
+                "diffuseColor": [
+                    0.8,
+                    0.1035294,
+                    0.5178093,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.999911299019004e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 10,
+                "ambientColor": [
+                    0.317647,
+                    0.0,
+                    0.2165777,
+                    1.0
+                ],
+                "diffuseTexture": "45",
+                "emissiveColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            },
+            "pipeline": "37"
+        },
+        "25": {
+            "name": "Yellow",
+            "Phong": {
+                "diffuseColor": [
+                    1.0,
+                    0.8039215,
+                    0.0,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.3843137,
+                    0.3089579,
+                    0.0,
+                    1.0
+                ]
+            },
+            "pipeline": "222",
+            "Physical": {
+                "metallicFactor": 0.0,
+                "roughnessFactor": 0.0
+            }
+        },
+        "26": {
+            "name": "Green",
+            "Phong": {
+                "diffuseColor": [
+                    0.1529411,
+                    0.7882353,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.2352941,
+                    0.1437908,
+                    1.0
+                ]
+            },
+            "pipeline": "37"
+        },
+        "46": {
+            "link": {
+                "name": "skel_controller_materials_controllerMTL1",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "name": "ControllerLeft",
+            "Phong": {
+                "shininess": 2
+            }
+        },
+        "88": {
+            "link": {
+                "name": "skel_controller_materials_controllerMTL",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "name": "ControllerRight"
+        },
+        "128": {
+            "name": "Cursor",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.99993744699168e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 1
+            },
+            "pipeline": "34"
+        },
+        "131": {
+            "link": {
+                "name": "Default_Material",
+                "file": "models\\hand-left.glb"
+            },
+            "name": "HandLeft"
+        },
+        "164": {
+            "link": {
+                "name": "lambert2",
+                "file": "models\\hand-right.glb"
+            },
+            "name": "HandRight"
+        },
+        "201": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            },
+            "name": "TextAccent",
+            "Text": {
+                "color": [
+                    0.9098039,
+                    0.0,
+                    0.5411764,
+                    1.0
+                ],
+                "font": "230"
+            }
+        },
+        "202": {
+            "name": "Dark",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.99993744699168e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 1,
+                "diffuseColor": [
+                    0.1686274,
+                    0.1686257,
+                    0.1686257,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0274509,
+                    0.0274507,
+                    0.0274507,
+                    1.0
+                ]
+            },
+            "pipeline": "38"
+        },
+        "203": {
+            "name": "GreenHover",
+            "Phong": {
+                "diffuseColor": [
+                    0.4894117,
+                    0.917647,
+                    0.7511102,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.3294117,
+                    0.2013071,
+                    1.0
+                ]
+            },
+            "pipeline": "37"
+        },
+        "206": {
+            "link": {
+                "name": "TeleportIndicator",
+                "file": "models\\teleport-indicator.glb"
+            },
+            "Phong": {
+                "diffuseColor": [
+                    0.6862745,
+                    0.6862676,
+                    0.6862676,
+                    1.0
+                ]
+            },
+            "pipeline": "34",
+            "Flat": {
+                "color": [
+                    0.8392156,
+                    0.8392072,
+                    0.8392072,
+                    1.0
+                ]
+            }
+        },
+        "207": {
+            "name": "Sky",
+            "pipeline": "249",
+            "AtmosphericSky": {
+                "exposure": 1.0,
+                "direction": [
+                    0.0,
+                    0.1,
+                    1.0
+                ]
+            }
+        }
+    },
+    "shaders": {
+        "2": {
+            "link": {
+                "name": "Flat.frag",
+                "file": "default"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "MeshVisualizer.frag",
+                "file": "default"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "Phong.frag",
+                "file": "default"
+            }
+        },
+        "28": {
+            "link": {
+                "name": "Dynamic.vert",
+                "file": "default"
+            }
+        },
+        "30": {
+            "link": {
+                "name": "Skinning.vert",
+                "file": "default"
+            }
+        },
+        "32": {
+            "link": {
+                "name": "DistanceFieldVector.frag",
+                "file": "default"
+            }
+        },
+        "37": {
+            "link": {
+                "name": "Particle.frag",
+                "file": "default"
+            }
+        },
+        "217": {
+            "link": {
+                "name": "Background.frag",
+                "file": "default"
+            }
+        },
+        "218": {
+            "link": {
+                "name": "Depth.frag",
+                "file": "default"
+            }
+        },
+        "220": {
+            "link": {
+                "name": "FullScreenTriangle.vert",
+                "file": "default"
+            }
+        },
+        "221": {
+            "link": {
+                "name": "Physical.frag",
+                "file": "default"
+            }
+        },
+        "224": {
+            "link": {
+                "name": "Sky.frag",
+                "file": "default"
+            }
+        },
+        "225": {
+            "link": {
+                "name": "Text.frag",
+                "file": "default"
+            }
+        },
+        "227": {
+            "link": {
+                "name": "Text.vert",
+                "file": "default"
+            }
+        },
+        "228": {
+            "link": {
+                "name": "TileFeedback.frag",
+                "file": "default"
+            }
+        },
+        "250": {
+            "link": {
+                "name": "AtmosphericSky.frag",
+                "file": "default"
+            }
+        },
+        "254": {
+            "link": {
+                "name": "Color.frag",
+                "file": "default"
+            }
+        }
+    },
+    "settings": {
+        "project": {
+            "name": "viversecli.wlp",
+            "version": [
+                1,
+                5,
+                0,
+                4
+            ],
+            "description": "viversecli.wlp"
+        },
+        "xr": {
+            "leftEyeObject": "18",
+            "rightEyeObject": "19",
+            "webxr": {
+                "optionalFeatures": {
+                    "local-floor": true
+                }
+            }
+        },
+        "scripting": {
+            "application": {
+                "output": "viversecli.wlp-app.js",
+                "bundling": "esbuild",
+                "esbuildFlags": "--format=esm --target=es2022 --external:@wonderlandengine/api --platform=node"
+            },
+            "components": {
+                "output": "viversecli.wlp-bundle.js"
+            },
+            "esbuildFlagsEditor": ""
+        },
+        "runtime": {
+            "visualizeColliders": false,
+            "enableRuntimeGltf": true,
+            "loadUncompressedImagesAsBitmap": false
+        },
+        "rendering": {
+            "hdr": {
+                "exposure": 1.0,
+                "tonemapping": "khronos pbr neutral"
+            },
+            "clearColor": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "bloom": {
+                "enabled": false,
+                "passes": 28,
+                "threshold": 1.0,
+                "intensity": 1.0,
+                "width": 0.8
+            },
+            "sky": {
+                "enabled": true,
+                "material": "207"
+            },
+            "environment": {
+                "enabled": true,
+                "bakingMode": "sky",
+                "material": "207",
+                "bakeExposure": 1.0,
+                "intensity": 0.8,
+                "mode": "spherical-harmonic-2"
+            },
+            "deferSkinningCompilation": true
+        },
+        "editor": {
+            "pluginsPaths": [
+                "plugins/viversecli.mjs"
+            ],
+            "serverCOEP": "unsafe-none"
+        }
+    },
+    "animations": {
+        "1": {
+            "link": {
+                "name": "animation_0",
+                "file": "static\\Idle.glb"
+            },
+            "pack": false,
+            "rootMotion": {
+                "translationAxis": 0,
+                "rotationAxis": 0,
+                "target": 48
+            },
+            "name": "Idle"
+        },
+        "2": {
+            "link": {
+                "name": "animation_0",
+                "file": "static\\Run.glb"
+            },
+            "pack": false,
+            "name": "Run"
+        },
+        "3": {
+            "link": {
+                "name": "animation_0",
+                "file": "static\\walk.glb"
+            },
+            "name": "walk",
+            "pack": false
+        }
+    },
+    "skins": {
+        "133": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "name": "HandLeftSkin",
+            "joints": [
+                "139",
+                "140",
+                "141",
+                "142",
+                "143",
+                "144",
+                "145",
+                "146",
+                "147",
+                "148",
+                "149",
+                "150",
+                "151",
+                "152",
+                "153",
+                "154",
+                "155",
+                "156",
+                "157",
+                "158",
+                "159",
+                "160",
+                "161",
+                "162",
+                "163"
+            ]
+        },
+        "166": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "name": "HandRightSkin",
+            "joints": [
+                "169",
+                "170",
+                "171",
+                "172",
+                "173",
+                "174",
+                "175",
+                "176",
+                "177",
+                "178",
+                "179",
+                "180",
+                "181",
+                "182",
+                "183",
+                "184",
+                "185",
+                "186",
+                "187",
+                "188",
+                "189",
+                "190",
+                "191",
+                "192",
+                "193"
+            ]
+        },
+        "171": {
+            "link": {
+                "name": "skin_4",
+                "file": "static\\TestModel.vrm"
+            },
+            "joints": [
+                null,
+                null,
+                null,
+                null
+            ]
+        },
+        "172": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "name": "HandLeftSkin",
+            "joints": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ]
+        },
+        "173": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "name": "HandRightSkin",
+            "joints": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ]
+        }
+    },
+    "pipelines": {
+        "33": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "34": {
+            "link": {
+                "name": "Flat Opaque",
+                "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true
+            }
+        },
+        "35": {
+            "link": {
+                "name": "Flat Opaque Textured",
+                "file": "default"
+            },
+            "shader": "2",
+            "features": {
+                "GLOBAL_ILLUMINATION": true,
+                "ALPHA_MASKED": true
+            }
+        },
+        "36": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "38": {
+            "link": {
+                "name": "Phong Opaque Textured",
+                "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true,
+                "WITH_EMISSIVE": true,
+                "TEXTURED": true,
+                "ALPHA_MASKED": true,
+                "GLOBAL_ILLUMINATION": true
+            },
+            "shader": "5",
+            "colorWrite": {
+                "alpha": true
+            },
+            "doubleSided": false,
+            "blending": false,
+            "sampleAlphaToCoverage": false,
+            "castShadows": true
+        },
+        "37": {
+            "link": {
+                "name": "Phong Opaque",
+                "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true,
+                "WITH_EMISSIVE": true,
+                "GLOBAL_ILLUMINATION": true,
+                "ALPHA_MASKED": true
+            },
+            "sampleAlphaToCoverage": false,
+            "doubleSided": false,
+            "shader": "5",
+            "colorWrite": {
+                "alpha": true
+            },
+            "depthFunction": "less or equal",
+            "depthWrite": true,
+            "depthTest": true,
+            "castShadows": true
+        },
+        "39": {
+            "link": {
+                "name": "Foliage",
+                "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true
+            }
+        },
+        "40": {
+            "link": {
+                "name": "Particle",
+                "file": "default"
+            }
+        },
+        "219": {
+            "link": {
+                "name": "Depth",
+                "file": "default"
+            }
+        },
+        "222": {
+            "link": {
+                "name": "Physical Opaque",
+                "file": "default"
+            },
+            "features": {
+                "SEPARATE_OCCLUSION_TEXTURE": true,
+                "WITH_FOG": true,
+                "GLOBAL_ILLUMINATION": true
+            }
+        },
+        "223": {
+            "link": {
+                "name": "Physical Opaque Textured",
+                "file": "default"
+            },
+            "features": {
+                "SEPARATE_OCCLUSION_TEXTURE": true
+            }
+        },
+        "226": {
+            "link": {
+                "name": "Text",
+                "file": "default"
+            },
+            "doubleSided": true,
+            "castShadows": false
+        },
+        "229": {
+            "link": {
+                "name": "Sky",
+                "file": "default"
+            }
+        },
+        "231": {
+            "link": {
+                "name": "Phong Normalmapped",
+                "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true,
+                "WITH_EMISSIVE": true
+            }
+        },
+        "232": {
+            "link": {
+                "name": "Phong Lightmapped",
+                "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true,
+                "WITH_EMISSIVE": true
+            }
+        },
+        "248": {
+            "link": {
+                "name": "TileFeedback",
+                "file": "default"
+            }
+        },
+        "249": {
+            "link": {
+                "name": "AtmosphericSky",
+                "file": "default"
+            }
+        },
+        "250": {
+            "link": {
+                "name": "Phong",
+                "file": "default"
+            }
+        },
+        "251": {
+            "link": {
+                "name": "Phong Textured",
+                "file": "default"
+            }
+        },
+        "252": {
+            "link": {
+                "name": "Color",
+                "file": "default"
+            }
+        },
+        "253": {
+            "link": {
+                "name": "VertexColor",
+                "file": "default"
+            }
+        }
+    },
+    "files": {
+        "250": {
+            "fileName": "models/oculus-touch-v2-left.glb",
+            "importerName": "",
+            "colorSpace": "srgb"
+        },
+        "251": {
+            "fileName": "models/oculus-touch-v2-right.glb",
+            "importerName": "",
+            "colorSpace": "srgb"
+        },
+        "252": {
+            "fileName": "models/hand-left.glb",
+            "importerName": "",
+            "colorSpace": "srgb"
+        },
+        "253": {
+            "fileName": "models/hand-right.glb",
+            "importerName": "",
+            "colorSpace": "srgb"
+        },
+        "254": {
+            "fileName": "models/button.glb",
+            "importerName": "",
+            "colorSpace": "srgb"
+        },
+        "255": {
+            "fileName": "models/teleport-indicator.glb",
+            "importerName": "",
+            "colorSpace": "srgb"
+        },
+        "258": {
+            "fileName": "static/Idle.glb",
+            "importerName": "",
+            "importPhysicalAsPhongMaterials": true,
+            "colorSpace": "srgb"
+        },
+        "259": {
+            "fileName": "static/Run.glb",
+            "importerName": "",
+            "importPhysicalAsPhongMaterials": true,
+            "colorSpace": "srgb"
+        },
+        "260": {
+            "fileName": "static/walk.glb",
+            "importerName": "",
+            "importPhysicalAsPhongMaterials": true,
+            "colorSpace": "srgb"
+        }
+    },
+    "fonts": {
+        "230": {
+            "link": {
+                "name": "DejaVuSans.ttf",
+                "file": "default"
+            }
+        }
+    },
+    "languages": {},
+    "morphTargets": {},
+    "particleEffects": {},
+    "shaderChunks": {
+        "1": {
+            "link": {
+                "name": "lib\\Color.glsl",
+                "file": "default"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "lib\\Compatibility.glsl",
+                "file": "default"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "lib\\CoordinateSystems.glsl",
+                "file": "default"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "lib\\GI.glsl",
+                "file": "default"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "lib\\Inputs.glsl",
+                "file": "default"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "lib\\Lights.glsl",
+                "file": "default"
+            }
+        },
+        "7": {
+            "link": {
+                "name": "lib\\Materials.glsl",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "lib\\Math.glsl",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "lib\\MorphTargets.glsl",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "lib\\Packing.glsl",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "lib\\PhysicalBSDF.glsl",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "lib\\Quaternion.glsl",
+                "file": "default"
+            }
+        },
+        "13": {
+            "link": {
+                "name": "lib\\SkyProcedural.glsl",
+                "file": "default"
+            }
+        },
+        "14": {
+            "link": {
+                "name": "lib\\Slug.frag.glsl",
+                "file": "default"
+            }
+        },
+        "15": {
+            "link": {
+                "name": "lib\\Slug.vert.glsl",
+                "file": "default"
+            }
+        },
+        "16": {
+            "link": {
+                "name": "lib\\Surface.glsl",
+                "file": "default"
+            }
+        },
+        "17": {
+            "link": {
+                "name": "lib\\Textures.glsl",
+                "file": "default"
+            }
+        },
+        "18": {
+            "link": {
+                "name": "lib\\Uniforms.glsl",
+                "file": "default"
+            }
+        }
+    },
+    "probeVolumeScenarios": {},
+    "plugins": {
+        "viversecli.mjs": {
+            "enable": true
+        },
+        "viverse-publish-plugin.mjs": {
+            "enable": true
+        },
+        "@wonderlandengine/viverse-publish-plugin": {
+            "enable": true
+        }
+    }
+}

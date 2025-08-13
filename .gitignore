@@ -1,0 +1,9 @@
+.autosave
+.editor
+deploy
+lib
+node_modules
+cache
+publishLog.txt
+appList.txt
+server/wle-apitoken.json

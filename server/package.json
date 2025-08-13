@@ -1,0 +1,32 @@
+{
+	"name": "wonderland-cloud-example-simple",
+	"version": "1.0.0",
+	"description": "Simple example for a multi-user server on Wonderland Cloud.",
+	"main": "dist/index.js",
+	"module": "dist/index.js",
+	"scripts": {
+		"build": "esbuild index.ts --bundle --format=cjs --outdir=dist --platform=node",
+		"prepack": "npm run build",
+		"build:tsc": "tsc",
+		"start:dev": "wl-cloud server debug --serverUrl https://server.wonderland.dev/viverse-template-test-develop",
+		"update:remote": "wl-cloud server update --serverUrl https://server.wonderland.dev/viverse-template-develop"
+	},
+	"author": "Wonderland GmbH",
+	"license": "Wonderland Engine EULA",
+	"devDependencies": {
+		"@types/node": "^20.5.7",
+		"@wonderlandcloud/cli": "^0.1.4",
+		"esbuild": "^0.19.2",
+		"typescript": "^5.2.2"
+	},
+	"files": [
+		"dist",
+		"index.ts",
+		"metaverse.ts",
+		"tsconfig.json",
+		"yarn.lock"
+	],
+	"dependencies": {
+		"@wonderlandcloud/multi-user-server-api": "^0.1.1"
+	}
+}
