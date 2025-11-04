@@ -28,7 +28,7 @@
 	"homepage": "https://github.com/WonderlandEngine/viverse-example/tree/main#readme",
 	"dependencies": {
 		"@viverse/cli": "^0.9.5-beta.8",
-		"@wonderlandengine/editor-api": "^1.4.7",
+		"@wonderlandengine/editor-api": "^1.5.0-rc.5",
 		"node": "^25.1.0"
 	}
 }

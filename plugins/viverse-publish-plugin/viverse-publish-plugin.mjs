@@ -107,7 +107,7 @@ export default class ViversePublishPlugin extends EditorPlugin {
 			if (e !== null) this._email = e;
 			ui.separator();
 			ui.label("Password.");
-			const p = ui.inputText("Password", this._password);
+			const p = ui.inputTextPassword("Password", this._password);
 			if (p !== null) this._password = p;
 
 			if (this._loginInProgress) {
